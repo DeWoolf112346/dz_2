@@ -1,0 +1,31 @@
+import math
+import turtle
+from collections import Counter
+run = True
+while run:
+    y = int(input("Введите номер задания: "))
+    if y == 1:
+        t = turtle.Turtle()
+        t.speed(0)
+        t.color("red")
+        def ploshad_kruga(a):
+            global radius
+            a = float(a)
+            S = 3.141 * (a * 2)
+            S = round(S)
+            print("Площадь круга: ", S)
+        radius = int(input("Введите радиус круга: "))
+        ploshad_kruga(radius)
+        t.circle(radius)
+    elif y == 2:
+        x = 15
+        def kukujamba(x = 'bar'):
+            globals()['x'] = x
+        print(x)
+    elif y == 3:
+        list1 = input("Введите что нибудь для подсчёта символов: ")
+        l = input("Введите символ для поиска: ")
+        list1.count(l)
+        print(list1.count(l))
+
+
